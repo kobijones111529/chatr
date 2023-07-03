@@ -46,7 +46,8 @@ pub fn Home(cx: Scope) -> impl IntoView {
 
     view! { cx,
         <div class="chat__outer-container">
-            <ol class="chat__container">
+            <div class="chat__container">
+            <ol class="chat">
                 <For
                     each=move || messages.get()
                     key=move |message| message.0
@@ -87,6 +88,7 @@ pub fn Home(cx: Scope) -> impl IntoView {
                     }}
                 />
             </ol>
+            </div>
         </div>
 
         <form on:submit=send_message>

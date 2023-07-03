@@ -1,4 +1,6 @@
 .chat__outer-container {
+  margin: 16px;
+
   height: 80%;
   overflow: hidden;
   border-radius: 8px;
@@ -11,8 +13,13 @@
 .chat__container {
   height: 100%;
   overflow: auto;
+}
+
+.chat {
+  padding: 24px 32px;
 
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  gap: 16px;
 }

@@ -1,4 +1,9 @@
 .chat-message__container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 4px;
+
   text-align: left;
 }
 
@@ -9,9 +14,11 @@
 .chat-message__sender {
   color: rgb(127, 127, 127);
   font-size: 0.8rem;
+  margin: 0;
 }
 
 .chat-message__message {
+  margin: 0;
   width: fit-content;
   padding: 8px 20px;
   border-radius: 16px;
