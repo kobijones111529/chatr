@@ -1,0 +1,18 @@
+.chat__outer-container {
+  height: 80%;
+  overflow: hidden;
+  border-radius: 8px;
+
+  background: rgb(0, 15, 15);
+
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.chat__container {
+  height: 100%;
+  overflow: auto;
+
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}

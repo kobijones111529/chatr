@@ -12,13 +12,14 @@ pub fn App(cx: Scope) -> impl IntoView {
     view! {
         cx,
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
-        <Title text="Welcome to Leptos"/>
+        <Title text="Chat-r"/>
+        <Meta name="color-scheme" content="dark" />
         <Router>
-            <main>
+            // <main>
                 <Routes>
                     <Route path="" view=|cx| view! { cx, <Home /> }/>
                 </Routes>
-            </main>
+            // </main>
         </Router>
     }
 }

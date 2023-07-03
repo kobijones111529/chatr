@@ -1583,7 +1583,6 @@ dependencies = [
  "actix-files",
  "actix-web",
  "actix-web-actors",
- "base64 0.21.2",
  "cfg-if",
  "console_error_panic_hook",
  "console_log",

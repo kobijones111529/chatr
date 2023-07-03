@@ -1,6 +1,5 @@
 use cfg_if::cfg_if;
 pub mod app;
-#[cfg(feature = "ssr")]
 pub mod chat;
 pub mod components;
 pub mod server_thing;

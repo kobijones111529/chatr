@@ -7,14 +7,14 @@ async fn main() -> std::io::Result<()> {
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
     use leptos_start::app::*;
-    use leptos_start::chat::{server::Server, ws};
+    use leptos_start::chat::server::{host::Host, ws};
 
     let conf = get_configuration(None).await.unwrap();
     let addr = conf.leptos_options.site_addr;
     // Generate the list of routes in your Leptos App
     let routes = generate_route_list(|cx| view! { cx, <App/> });
 
-    let chat_server = Server::default().start();
+    let chat_server = Host::default().start();
 
     HttpServer::new(move || {
         let leptos_options = &conf.leptos_options;

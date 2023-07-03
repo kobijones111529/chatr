@@ -1,20 +1,21 @@
+use serde::{Serialize, Deserialize};
+
+pub mod message;
+#[cfg(feature = "ssr")]
 pub mod server;
-pub mod session;
 
-use actix::Addr;
-use actix_web::{
-    web::{Data, Payload},
-    Error, HttpRequest, HttpResponse,
-};
-use actix_web_actors::ws;
+#[derive(Clone, Serialize, Deserialize, Debug)]
+pub struct Name(String);
 
-use server::Server;
-use session::Session;
+impl Name {
+    pub fn new(name: &str) -> Option<Self> {
+        match name {
+            "" => None,
+            name => Some(Name(name.to_string())),
+        }
+    }
 
-pub async fn ws(
-    req: HttpRequest,
-    stream: Payload,
-    server: Data<Addr<Server>>,
-) -> Result<HttpResponse, Error> {
-    ws::start(Session::new(server.get_ref().clone()), &req, stream)
+    pub fn value(&self) -> &str {
+        self.0.as_str()
+    }
 }

@@ -1,4 +1,23 @@
+@import 'components/chat';
+@import 'components/chat-message';
+
+@import 'pages/home';
+
 body {
+	height: 100vh;
+	overflow: hidden;
+
+	background: rgb(0, 23, 23);
+	color: white;
+
 	font-family: sans-serif;
 	text-align: center;
+}
+
+ol {
+	margin: 0;
+
+	li {
+		list-style: none;
+	}
 }

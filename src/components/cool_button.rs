@@ -1,4 +1,4 @@
-use crate::{server_thing::ServerThing, ws::use_ws, ws::send_msg};
+use crate::{server_thing::ServerThing, ws::create_ws_signal, ws::send_msg};
 use leptos::*;
 use leptos_router::*;
 
@@ -18,7 +18,7 @@ pub fn CoolButton(cx: Scope, offset: ReadSignal<i32>) -> impl IntoView {
         })
     });
 
-    use_ws(cx);
+    create_ws_signal(cx);
 
     view! {cx,
         <ActionForm action=do_thing_action>

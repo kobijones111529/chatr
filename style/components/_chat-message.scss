@@ -1,0 +1,28 @@
+.chat-message__container {
+  text-align: left;
+}
+
+.chat-message__container--me {
+  align-self: flex-end;
+}
+
+.chat-message__sender {
+  color: rgb(127, 127, 127);
+  font-size: 0.8rem;
+}
+
+.chat-message__message {
+  width: fit-content;
+  padding: 8px 20px;
+  border-radius: 16px;
+}
+
+.chat-message__message--server {
+  background: rgb(0, 63, 63);
+  color: rgb(42, 217, 217);
+}
+
+.chat-message__message--me {
+  background: rgb(70, 120, 255);
+  color: rgb(255, 255, 255);
+}
