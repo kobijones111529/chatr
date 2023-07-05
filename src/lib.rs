@@ -2,7 +2,6 @@ use cfg_if::cfg_if;
 pub mod app;
 pub mod chat;
 pub mod components;
-pub mod server_thing;
 pub mod ws;
 
 cfg_if! {
