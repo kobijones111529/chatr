@@ -21,8 +21,6 @@ fn create_ws_signal_wasm32(cx: Scope, set: WriteSignal<Option<ServerMessage>>) {
     use wasm_bindgen::{prelude::Closure, JsCast};
     use web_sys::MessageEvent;
 
-    use crate::chat::message::ServerMessage;
-
     let ws = use_context::<ServerWS>(cx);
 
     match ws {
@@ -103,8 +101,6 @@ where
     use js_sys::{Function, JsString};
     use wasm_bindgen::{prelude::Closure, JsCast};
     use web_sys::MessageEvent;
-
-    use crate::chat::message::ServerMessage;
 
     let ws = use_context::<ServerWS>(cx);
 

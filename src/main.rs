@@ -4,10 +4,10 @@ async fn main() -> std::io::Result<()> {
     use actix::Actor;
     use actix_files::Files;
     use actix_web::*;
+    use chat_r::app::*;
+    use chat_r::chat::server::{host::Host, ws};
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use leptos_start::app::*;
-    use leptos_start::chat::server::{host::Host, ws};
 
     let conf = get_configuration(None).await.unwrap();
     let addr = conf.leptos_options.site_addr;

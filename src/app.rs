@@ -11,7 +11,7 @@ pub fn App(cx: Scope) -> impl IntoView {
     // Connect to WebSocket if on client
     #[cfg(not(feature = "ssr"))]
     (move || {
-        use ws::provide_websocket;
+        use crate::ws::provide_websocket;
 
         let location = window().location();
         let protocol = location.protocol().map(|protocol| match protocol.as_str() {
@@ -34,7 +34,7 @@ pub fn App(cx: Scope) -> impl IntoView {
 
     view! {
         cx,
-        <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
+        <Stylesheet id="leptos" href="/pkg/chat-r.css"/>
         <Title text="Chat-r"/>
         <Meta name="color-scheme" content="dark" />
         <Router>

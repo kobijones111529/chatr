@@ -542,6 +542,31 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "chat-r"
+version = "0.1.0"
+dependencies = [
+ "actix",
+ "actix-files",
+ "actix-web",
+ "actix-web-actors",
+ "cfg-if",
+ "console_error_panic_hook",
+ "console_log",
+ "js-sys",
+ "leptos",
+ "leptos_actix",
+ "leptos_meta",
+ "leptos_router",
+ "log",
+ "serde",
+ "serde_json",
+ "simple_logger",
+ "uuid",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
 name = "ciborium"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1573,31 +1598,6 @@ dependencies = [
  "server_fn",
  "thiserror",
  "tracing",
-]
-
-[[package]]
-name = "leptos_start"
-version = "0.1.0"
-dependencies = [
- "actix",
- "actix-files",
- "actix-web",
- "actix-web-actors",
- "cfg-if",
- "console_error_panic_hook",
- "console_log",
- "js-sys",
- "leptos",
- "leptos_actix",
- "leptos_meta",
- "leptos_router",
- "log",
- "serde",
- "serde_json",
- "simple_logger",
- "uuid",
- "wasm-bindgen",
- "web-sys",
 ]
 
 [[package]]

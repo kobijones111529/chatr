@@ -1,5 +1,5 @@
 [package]
-name = "leptos_start"
+name = "chat-r"
 version = "0.1.0"
 edition = "2021"
 
@@ -35,12 +35,12 @@ hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
 ssr = ["dep:actix", "dep:actix-files", "dep:actix-web", "dep:leptos_actix", "dep:actix-web-actors", "leptos/ssr", "leptos_meta/ssr", "leptos_router/ssr"]
 
 [package.metadata.leptos]
-# The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name   
-output-name = "leptos_start"
+# The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
+output-name = "chat-r"
 # The site root folder is where cargo-leptos generate all output. WARNING: all content of this folder will be erased on a rebuild. Use it in your server setup.
 site-root = "target/site"
 # The site-root relative folder where all compiled output (JS, WASM and CSS) is written
-# Defaults to pkg	
+# Defaults to pkg
 site-pkg-dir = "pkg"
 # [Optional] The source CSS file. If it ends with .sass or .scss then it will be compiled by dart-sass into CSS. The CSS is optimized by Lightning CSS before being written to <site-root>/<site-pkg>/app.css
 style-file = "style/main.scss"
