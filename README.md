@@ -14,5 +14,5 @@ Chat-r is a simple real-time chat application prototype implemented in Rust.
 2. [Install Rust](https://rustup.rs/)
 3. [Install cargo-leptos](https://github.com/leptos-rs/cargo-leptos)
 4. Run `cargo leptos watch` in the project's root directory
-5. Go to `http://localhost:3002` in your browser
+5. Go to `http://localhost:3000` in your browser
    - The port can be changed in `Cargo.toml` as `site-addr`
